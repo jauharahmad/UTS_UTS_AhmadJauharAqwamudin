@@ -3,10 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main/static/style.css">
 </head>
 <body>
-    <h1>UTS Django Project</h1>
-    <p>Ini halaman pertama</p>
+    <div class="site">
+
+        <aside>
+            <div class="sidebar">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    Jauhar
+                </div>
+                <nav id="main-nav">
+                    <a href="#home" onclick="navigate('home')" class="active" data-page="home">Home</a>
+                    <a href="#about" onclick="navigate('about')" data-page="about">About</a>
+                    <a href="#resume" onclick="navigate('resume')" data-page="resume">Resume</a>
+                    <a href="#portfolio" onclick="navigate('portfolio')" data-page="portfolio">Portfolio</a>
+                    <a href="#contact" onclick="navigate('contact')" data-page="contact">Contact</a>
+                </nav>
+            </div>
+        </aside>
+
+        <div id="home" class="page active">
+            <div class="home-main">
+                <div class="home-content">
+                    <span class="status-dot"></span>
+                    Available for work
+                </div>
+                <p class="home-greeting">Hi, I'm Jauhar</p>
+                <h1 class="home-title">
+                    Data Scientist<br>
+                    College <em>Based</em><br>
+                    <em>in Salatiga</em>
+                </h1>
+                <div class="home-divider"></div>
+                <p class="home-desc">I'm a data scientist in college.</p>
+            </div>
+
+            <div class="home-right">
+                <p class="panel-label">Profile:</p>
+                <div class="profile-img">
+                    <img src="/main/img/main.jpeg" alt="Jauhar">
+                </div>
+                <div class="info-item">
+                    <a href="mailto:ajaqwa06@gmail.com">ajaqwa06@gmail.com</a>
+                </div>
+                <div class="info-item">
+                    <a href="tel:+6283836697357">+62 8383 6697 357</a>
+                </div>
+                <div class="info-item">
+                    <a href="#">Salatiga, Indonesia</a>
+                </div>
+                <button class="dl-btn">Download CV</button>
+            </div>
+        </div>
+
+        <div id="about" class="page">
+            <div class="about-hero">
+                <div>
+                    <p class="eyebrow">About Me</p>
+                    <h1 class="big-title">I am a<br>Data Scientist<br><em>in college</em></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-img">
+                        <img src="/main/img/main.jpeg" alt="Jauhar">
+                    </div>
+                    <h3 class="profile-name">Jauhar</h3>
+                    <p class="profile-role">Data Scientist</p>
+                    <div class="av-badge">
+                        <span class="status-dot"></span> Available for work
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resume" class="page">
+            <div class="resume-hero">
+                <div>
+                    <p class="eyebrow">Resume</p>
+                    <h1 class="big-title">My<br>Resume</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                </div>
+                <button class="btn-primary">Download CV</button>
+            </div>
+
+            <div class="two-col">
+                <div>
+                    <p class="section-label">Experience</p>
+                    <div class="timeline"></div>
+                </div>
+
+                <div>
+                    <p class="section-label">Education</p>
+                    <div class="edu-list">
+                        <div class="edu-item">
+                            <p class="edu-degree">Sekolah Menengah Kejuruan</p>
+                            <p class="edu-institution">SMK Negeri 1 Tengaran</p>
+                            <p class="edu-year">2021 – 2024</p>
+                        </div>
+                        <div class="edu-item">
+                            <p class="edu-degree">Madrasah Tsanawiyah</p>
+                            <p class="edu-institution">MTs Negeri Salatiga</p>
+                            <p class="edu-year">2018 – 2021</p>
+                        </div>
+                        <div class="edu-item">
+                            <p class="edu-degree">Sekolah Dasar</p>
+                            <p class="edu-institution">SDN Salatiga</p>
+                            <p class="edu-year">2012 – 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="page">
+            <div class="portfolio-hero">
+                <div>
+                    <p class="eyebrow">Selected Work</p>
+                    <h1 class="big-title">My<br>Portfolio</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="page">
+            <div class="contact-hero">
+                <p class="eyebrow">Get in Touch</p>
+                <h1 class="big-title">Contact<br>Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div>
+                    <p class="section-label">Send a Message</p>
+                    <div class="form">
+                        <div class="form-row">
+                            <div class="field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Jauhar">
+                            </div>
+                            <div class="field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Ahmad">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="you@email.com">
+                        </div>
+                        <div class="field">
+                            <label>Your Message</label>
+                            <textarea placeholder="Your message here…"></textarea>
+                        </div>
+                        <button class="submit-btn" id="submitBtn" onclick="submitForm()">Send Message</button>
+                        <div class="success-msg" id="successMsg">Message sent successfully!</div>
+                    </div>
+                </div>
+
+                <div class="right-panel">
+                    <div class="info-card">
+                        <div class="info-row-item">
+                            <div>
+                                <p class="info-label">Email</p>
+                                <p class="info-val"><a href="mailto:ajaqwa06@gmail.com">ajaqwa06@gmail.com</a></p>
+                            </div>
+                            <div>
+                                <p class="info-label">Location</p>
+                                <p class="info-val">Salatiga, Indonesia</p>
+                            </div>
+                            <div>
+                                <p class="info-label">Response Time</p>
+                                <p class="info-val">Within 48 hours</p>
+                            </div>
+                            <div>
+                                <p class="info-label">Availability</p>
+                                <p class="info-val">Mon – Fri, 08:00 – 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-card">
+                        <p class="social-title">Connect with me</p>
+                        <div class="social-links">
+                            <div class="social-link">
+                                <span class="social-link-name">LinkedIn</span>
+                            </div>
+                            <div class="social-link">
+                                <span class="social-link-name">GitHub</span>
+                            </div>
+                            <div class="social-link">
+                                <span class="social-link-name">Instagram</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.site -->
+
+    <script>
+        function navigate(page) {
+            // Deactivate all pages & nav links
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('#main-nav a').forEach(a => a.classList.remove('active'));
+
+            // Activate target
+            const target = document.getElementById(page);
+            if (target) target.classList.add('active');
+
+            const link = document.querySelector(`[data-page="${page}"]`);
+            if (link) link.classList.add('active');
+        }
+
+        function submitForm() {
+            document.getElementById('successMsg').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
