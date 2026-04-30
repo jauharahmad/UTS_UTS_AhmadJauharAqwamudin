@@ -325,7 +325,7 @@ nav a.active {
 
 .about-hero {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 300px;
     gap: 2.5rem;
     align-items: start;
 }

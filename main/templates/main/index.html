@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    {% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/main/static/style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <div class="site">
@@ -45,9 +46,9 @@
             </div>
 
             <div class="home-right">
-                <p class="panel-label">Profile:</p>
+                <p class="panel-label">Jauhar:</p>
                 <div class="profile-img">
-                    <img src="/main/img/main.jpeg" alt="Jauhar">
+                    <img src="{% static 'img/main.jpeg' %}" alt="Jauhar">
                 </div>
                 <div class="info-item">
                     <a href="mailto:ajaqwa06@gmail.com">ajaqwa06@gmail.com</a>
@@ -58,7 +59,9 @@
                 <div class="info-item">
                     <a href="#">Salatiga, Indonesia</a>
                 </div>
-                <button class="dl-btn">Download CV</button>
+                <button class="dl-btn">
+                    <a href="https://github.com/jauharahmad" target="_blank">View GitHub Profile</a>
+                </button>
             </div>
         </div>
 
@@ -71,7 +74,7 @@
                 </div>
                 <div class="profile-card">
                     <div class="profile-img">
-                        <img src="/main/img/main.jpeg" alt="Jauhar">
+                        <img src="{% static 'img/main.jpeg' %}" alt="Jauhar">
                     </div>
                     <h3 class="profile-name">Jauhar</h3>
                     <p class="profile-role">Data Scientist</p>
@@ -89,7 +92,9 @@
                     <h1 class="big-title">My<br>Resume</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
                 </div>
-                <button class="btn-primary">Download CV</button>
+                <button class="btn-primary">
+                    <a href="https://github.com/jauharahmad" target="_blank">GitHub</a>
+                </button>
             </div>
 
             <div class="two-col">
@@ -104,17 +109,17 @@
                         <div class="edu-item">
                             <p class="edu-degree">Sekolah Menengah Kejuruan</p>
                             <p class="edu-institution">SMK Negeri 1 Tengaran</p>
-                            <p class="edu-year">2021 – 2024</p>
+                            <p class="edu-year">2021 - 2024</p>
                         </div>
                         <div class="edu-item">
                             <p class="edu-degree">Madrasah Tsanawiyah</p>
                             <p class="edu-institution">MTs Negeri Salatiga</p>
-                            <p class="edu-year">2018 – 2021</p>
+                            <p class="edu-year">2018 - 2021</p>
                         </div>
                         <div class="edu-item">
                             <p class="edu-degree">Sekolah Dasar</p>
                             <p class="edu-institution">SDN Salatiga</p>
-                            <p class="edu-year">2012 – 2018</p>
+                            <p class="edu-year">2012 - 2018</p>
                         </div>
                     </div>
                 </div>
@@ -191,21 +196,26 @@
                         <p class="social-title">Connect with me</p>
                         <div class="social-links">
                             <div class="social-link">
-                                <span class="social-link-name">LinkedIn</span>
+                                <span class="social-link-name">
+                                    <a href="https://linkedin.com/in/ajaqwa" target="_blank">LinkedIn</a>
+                                </span>
                             </div>
                             <div class="social-link">
-                                <span class="social-link-name">GitHub</span>
+                                <span class="social-link-name">
+                                    <a href="https://github.com/jauharahmad" target="_blank">GitHub</a>
+                                </span>
                             </div>
                             <div class="social-link">
-                                <span class="social-link-name">Instagram</span>
+                                <span class="social-link-name">
+                                    <a href="https://www.instagram.com/jauharo0/" target="_blank">Instagram</a>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </div><!-- /.site -->
+    </div>
 
     <script>
         function navigate(page) {
