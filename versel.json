@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "UTS_AhmadJauharAqwamudin/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "staticfiles" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "UTS_AhmadJauharAqwamudin/wsgi.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "UTS_AhmadJauharAqwamudin/wsgi.py"
+    }
+  ]
+}
