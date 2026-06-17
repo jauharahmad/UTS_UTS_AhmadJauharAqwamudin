@@ -67,10 +67,24 @@
 
         <div id="about" class="page">
             <div class="about-hero">
-                <div>
+                <div class="about-copy">
                     <p class="eyebrow">About Me</p>
                     <h1 class="big-title">I am a<br>Data Scientist<br><em>in college</em></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                    <p class="about-desc">Saya mahasiswa yang tertarik pada data, analisis, dan visualisasi. Fokus saya adalah mengubah data mentah menjadi insight yang mudah dipahami dan berguna untuk pengambilan keputusan.</p>
+                    <div class="about-facts">
+                        <div class="fact-card">
+                            <span class="fact-label">Focus</span>
+                            <span class="fact-value">Data cleaning & analysis</span>
+                        </div>
+                        <div class="fact-card">
+                            <span class="fact-label">Interest</span>
+                            <span class="fact-value">Dashboard & storytelling</span>
+                        </div>
+                        <div class="fact-card">
+                            <span class="fact-label">Location</span>
+                            <span class="fact-value">Salatiga, Indonesia</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="profile-card">
                     <div class="profile-img">
@@ -81,29 +95,84 @@
                     <div class="av-badge">
                         <span class="status-dot"></span> Available for work
                     </div>
+                    <div class="profile-meta">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Visualization</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-panel">
+                    <p class="section-label">What I Do</p>
+                    <ul class="about-list">
+                        <li>Membersihkan dan menyiapkan data untuk analisis.</li>
+                        <li>Membaca pola, tren, dan insight dari dataset.</li>
+                        <li>Menyusun presentasi dan visualisasi yang mudah dipahami.</li>
+                    </ul>
+                </div>
+                <div class="about-panel">
+                    <p class="section-label">Tools</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Tableau / Power BI</span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="resume" class="page">
             <div class="resume-hero">
-                <div>
+                <div class="resume-intro">
                     <p class="eyebrow">Resume</p>
                     <h1 class="big-title">My<br>Resume</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                    <p class="resume-copy">Ringkasan pengalaman organisasi dan perjalanan pendidikan yang membentuk fokus saya di bidang data.</p>
+                    <div class="resume-summary">
+                        <div class="summary-card">
+                            <span class="summary-value">3</span>
+                            <span class="summary-label">Organisasi</span>
+                        </div>
+                        <div class="summary-card">
+                            <span class="summary-value">4+</span>
+                            <span class="summary-label">Tahun aktif belajar</span>
+                        </div>
+                        <div class="summary-card">
+                            <span class="summary-value">Data</span>
+                            <span class="summary-label">Fokus utama</span>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn-primary">
-                    <a href="https://github.com/jauharahmad" target="_blank">GitHub</a>
-                </button>
+                <a class="btn-primary" href="https://github.com/jauharahmad" target="_blank">GitHub</a>
             </div>
 
             <div class="two-col">
-                <div>
+                <div class="resume-panel">
                     <p class="section-label">Experience</p>
-                    <div class="timeline"></div>
+                    <div class="exp-list">
+                        <div class="exp-item">
+                            <p class="exp-organitation">Pengurus HMPS Sains Data</p>
+                            <p class="exp-position">Anggota Divisi Riset dan Keilmuan</p>
+                            <p class="exp-year">2025</p>
+                        </div>
+                        <div class="exp-item">
+                            <p class="exp-organitation">Pengurus Rayon Matori Abdul Djalil</p>
+                            <p class="exp-position">Anggota Biro Aparatur</p>
+                            <p class="exp-year">2025-Sekarang</p>
+                        </div>
+                        <div class="exp-item">
+                            <p class="exp-organitation">Pengurus HMPS Sains Data</p>
+                            <p class="exp-position">Wakil Ketua</p>
+                            <p class="exp-year">2026-Sekarang</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
+                <div class="resume-panel">
                     <p class="section-label">Education</p>
                     <div class="edu-list">
                         <div class="edu-item">
@@ -128,11 +197,48 @@
 
         <div id="portfolio" class="page">
             <div class="portfolio-hero">
-                <div>
+                <div class="portfolio-copy">
                     <p class="eyebrow">Selected Work</p>
                     <h1 class="big-title">My<br>Portfolio</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                    <p class="portfolio-desc">Beberapa contoh proyek dan arah kerja yang saya minati: eksplorasi data, dashboard ringkas, dan model analitis sederhana.</p>
                 </div>
+                <div class="portfolio-note">
+                    <p class="portfolio-note-label">Style</p>
+                    <p>Ringkas, bersih, dan fokus pada insight.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="project-card">
+                    <p class="project-type">Data Analysis</p>
+                    <h3>Sales Trend Review</h3>
+                    <p class="project-desc">Analisis tren penjualan untuk melihat performa bulanan, kategori paling kuat, dan titik penurunan yang perlu diperhatikan.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Dashboard</span>
+                        <span>Insight</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <p class="project-type">Visualization</p>
+                    <h3>Student Activity Dashboard</h3>
+                    <p class="project-desc">Tampilan data aktivitas mahasiswa dengan fokus pada ringkasan cepat, perbandingan kategori, dan pembacaan yang sederhana.</p>
+                    <div class="project-tags">
+                        <span>Tableau</span>
+                        <span>Charts</span>
+                        <span>Summary</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <p class="project-type">Machine Learning</p>
+                    <h3>Basic Classification Study</h3>
+                    <p class="project-desc">Eksperimen model klasifikasi dasar untuk memahami alur preprocessing, training, dan evaluasi secara sederhana.</p>
+                    <div class="project-tags">
+                        <span>Scikit-learn</span>
+                        <span>Modeling</span>
+                        <span>Evaluation</span>
+                    </div>
+                </article>
             </div>
         </div>
 
