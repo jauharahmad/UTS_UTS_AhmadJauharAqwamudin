@@ -619,3 +619,55 @@ nav a.active {
 .social-link-name {
     flex: 1;
 }
+
+@media (max-width: 768px) {
+    :root { --sidebar-w: 0px; }
+
+    .site {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        left: -260px;
+        width: 260px;
+        transition: left 0.3s ease;
+        z-index: 100;
+    }
+
+    aside.open { left: 0; }
+
+    .mobile-toggle {
+        display: flex;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 200;
+        background: var(--surface);
+        border: 1px solid var(--border2);
+        border-radius: 8px;
+        padding: 8px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home { grid-template-columns: 1fr; }
+    .home-right { border-left: none; border-top: 1px solid var(--border); }
+    .home-main { padding: 5rem 1.5rem 2rem; }
+
+    #about, #resume, #portfolio, #contact {
+        padding: 5rem 1.5rem 2rem;
+    }
+
+    .about-header { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+
+    .big-title { font-size: 30px; }
+    .home-title { font-size: 36px; }
+}
+
+@media (min-width: 769px) {
+    .mobile-toggle { display: none; }
+}
